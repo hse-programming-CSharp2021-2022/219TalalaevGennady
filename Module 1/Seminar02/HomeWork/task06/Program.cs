@@ -28,7 +28,7 @@ namespace task06
                     str1 = Console.ReadLine();
                 } while (!int.TryParse(str1, out persent));
                 
-                Console.WriteLine("Количество денег выделенных на игры: " + ans(a,persent) + " рублей");
+                Console.WriteLine($"Количество денег выделенных на игры: {ans(a,persent):C1}");
 
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
         }
